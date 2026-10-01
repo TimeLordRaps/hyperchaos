@@ -1,0 +1,29 @@
+{
+  "field_id": "hyperchaos",
+  "contract_version": "0.1.0",
+  "classification": "FRAME",
+  "module": "hyperchaos",
+  "exports": [
+    "Standing",
+    "Usage",
+    "USAGES",
+    "Statement",
+    "REALIGNMENT",
+    "MISSING",
+    "Ruling",
+    "Sense",
+    "RULING",
+    "resolve_sense"
+  ],
+  "scope": "A field named before its sense: 'hyperchaos' resolves to nothing until Tyler rules. The sources' usages of 'chaos' and 'hyperchaos' are recorded with their standing, and the form of the ruling that would choose a sense is checked: his words, their source, what the sense builds on, and an acknowledgement when it builds on a meaning from outside the family.",
+  "exclusions": [
+    "This module does not implement hyperchaos, and no sense of hyperchaos is declared.",
+    "'chaos' is not aliased to 'hyperchaos'; a ruling declares a new sense, never an alias of a usage.",
+    "The dynamics term 'hyperchaos', at least two positive Lyapunov exponents, is recorded as external and not adopted.",
+    "Whether chaos realigns into order, and whether Hyperethics grounds hyperchaos, is not decided.",
+    "No Lyapunov exponent, attractor, clock, index, duration, or step count is computed or used.",
+    "A ruling's form is checked; that its words are Tyler's is not authenticated.",
+    "No physical, dynamical, or ethical claim is established."
+  ],
+  "verifier_status": "NOT_CHECKED"
+}
