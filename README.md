@@ -86,11 +86,27 @@ the tests exercise supplied finite structures.
 
 ## Grounding and execution boundaries
 
-The source family preserves `□`, `~~`, `=~`, and `==`: ground/application,
-continuation overlap, same substance regardless of path, and mutual
-simulation. This implementation's reachability, matter equality and pattern
-equality are finite observations. Their native bridge is **[OPEN]**. Equal
-split patterns do not establish `==`; absence of a finite witness does not
+The source family preserves `□`, `~~`, `=~`, `~=`, and `==`:
+ground/application, continuation overlap, same substance regardless of path,
+transitive abstraction, and mutual simulation. The L1 concrete implication
+subpath is `== ⇒ =~ ⇒ ~~`; it is not the full filtration. The published
+quadrilateral architecture adds the distinct `~=` abstraction branch from
+`~~` and a conditional retrace toward `==`. `~=` is not `=~`, and these
+relations do not form a linear four-term chain.
+
+The public source snapshot is not uniform: its quadrilateral research
+specification and Lean file contain the branch, while its pinned L2 `.hm`
+file does not. In that Lean file the retrace witness already requires mutual
+simulation, so its conditional theorem does not independently establish
+simulation from abstraction. [THEORY.md](THEORY.md) and
+[PROVENANCE.md](PROVENANCE.md) state the source coordinates and restrictions.
+
+This implementation's reachability, matter equality and pattern equality
+are finite observations. Erasing presentation detail in `observed_pattern`
+is a finite abstraction operation, not an established native `~=` witness.
+No finite output is silently promoted into `~~`, `=~`, `~=` or `==`.
+Their native bridge and conditional retrace remain **[OPEN]**. Equal split
+patterns do not establish `==`; absence of a finite witness does not
 establish native nonclosure.
 
 The frame accepts complete acyclic observations with 1–256 states and at

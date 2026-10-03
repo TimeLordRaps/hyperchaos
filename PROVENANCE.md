@@ -30,9 +30,30 @@ The native terminology was checked against public Hypermath revision
 `dc89cbb4f154844ca4909d7c1c359ee3882323e2` on 2026-10-03:
 
 - [L0 ground](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L0_ground.hm): `□`, the ground/application structure and relation declarations.
-- [L1 relations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L1_relations.hm): `==` implies `=~` implies `~~`.
-- [L2 operations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L2_operations.hm): composition and derivation paths.
+- [L1 relations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L1_relations.hm): the concrete implication subpath `==` implies `=~` implies `~~`, not the complete filtration architecture.
+- [L2 operations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L2_operations.hm): composition and derivation paths; this pinned public file does not declare the quadrilateral abstraction branch.
 - [L3 ordinatics](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L3_ordinatics.hm): ordinal continuation and native layer boundaries.
+
+## Quadrilateral source correction
+
+The first integration description omitted `~=` and incorrectly presented
+the concrete L1 triangle as the whole relation structure. That omission was
+identified and corrected on 2026-10-03. The public quadrilateral sources at
+the same pinned Hypermath revision are:
+
+- [Quadrilateral architectural specification](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/docs/research/QUADRILATERAL_FILTRATION.md): the `~=` abstraction off-branch and conditional retrace, distinct from the concrete substance route through `=~`.
+- [Quadrilateral Lean declarations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/lean4/Hypermath/QuadrilateralFiltration.lean): `Abstraction` is generated from `Similar` with reflexive, symmetric and transitive constructors; its notation is `~ₐ`.
+- [Public abstraction prototype](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/src/hypermath_foundations/abstraction.py): a neighboring prototype, not a dependency or a native bridge implemented by Hyperchaos.
+
+The source surfaces must stay distinct. The pinned public L2 `.hm` file has
+no abstraction/retrace declarations. In the pinned Lean file,
+`SubstanceWitness(x,y)` is defined as `(x ≡ y)` itself and
+`conditionalRetrace` returns that premise. The theorem therefore does not
+independently construct mutual simulation from abstraction. The architectural
+document's stronger equivalence and realizability claims remain documented
+source intent; this repository does not mark them as a discharged native
+transfer or silently substitute another source version. `~=` and `=~` are
+different relations, not alternative spellings.
 
 The published [Hypergrammar chapter 21](https://github.com/TimeLordRaps/hypergrammar/blob/d4df988be65636bf66d6d3f8ef5a85edf524d8dc/docs/prerequisites/21_hypertopologies.md)
 is a pinned lineage source for closure-native continuation and Hyperorder's

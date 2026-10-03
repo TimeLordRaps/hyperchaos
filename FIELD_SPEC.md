@@ -17,7 +17,14 @@ the speaker.
 
 **[FRAME]** Everything below is an assistant-developed finite observation.
 **[OPEN]** Native derivation from `□` and relation-preserving transfer into
-`~~`, `=~`, and `==` have not been discharged.
+`~~`, `=~`, `~=`, and `==` have not been discharged. The concrete L1
+implication subpath `== ⇒ =~ ⇒ ~~` is one part of the published quadrilateral
+architecture. Its distinct `~=` abstraction branch and conditional retrace
+must not be flattened into a four-term implication chain. In the pinned
+public snapshot the quadrilateral research/Lean sources expose the branch,
+but L2 `.hm` does not; the public Lean retrace witness already supplies mutual
+simulation. The source-level restrictions are stated in
+[THEORY.md](THEORY.md) and [PROVENANCE.md](PROVENANCE.md).
 
 ## Immutable input
 
@@ -48,6 +55,8 @@ at most 1,024 transitions.
 - `observed_pattern(state)` returns a cached recursive multiset of fork
   patterns after erasing identifiers, matter spellings and unary chains.
   Semantic alternative multiplicities remain; branch ordering has no meaning.
+  This finite presentation abstraction does not establish native `~=` or
+  authorize a retrace from pattern equality to native simulation.
 
 `analyze(frame, root)` returns `Analysis` with:
 

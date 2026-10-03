@@ -13,12 +13,13 @@
 | HC-009 | A `Ruling` checks shape, not authorship. The entered current statement is quoted from Tyler's direct clarification. | ADDRESSED | Future rulings require actual source evidence; caller-created ruling objects do not authenticate a person. |
 | HC-010 | The ruling's form, the two standings and "a ruling declares a new sense, never an alias" are assistant-proposed bookkeeping. | OPEN | Tyler's acceptance of the discipline as this field's own. |
 | HC-011 | Choice classes and terminal matter are supplied semantic declarations. Different presentations may actually be the same act; the program cannot authenticate the quotient. | OPEN | Before applying to a real process, provide independent source evidence and good/bad equivalence fixtures. |
-| HC-012 | Finite reachability, matter equality and split-pattern equality are not established native `□`, `~~`, `=~`, `==` mechanisms. | OPEN | Construct and refute a sourced relation-preserving bridge before claiming native closure. |
+| HC-012 | Finite reachability, matter equality and split-pattern equality are not established native `□`, `~~`, `=~`, `~=`, `==` mechanisms. Concrete and abstraction paths have different obligations. | OPEN | Construct and refute a sourced relation-preserving bridge; conditional retrace must not be inferred from abstraction or an already-assumed simulation witness. |
 | HC-013 | Recurrent, cyclic, incomplete and transfinite continuation are outside the current acyclic observation. Rejection does not prove nonclosure. | OPEN | A coinductive or native ordinatic extension must preserve return/aperture and be checked against cycle counterexamples. |
 | HC-014 | Two exclusive branch regions are a sufficient finite motif, not an exhaustive theory of overlapping/context-changing divergence. | OPEN | Extend the motif set at the next native bridge or actual-system application; preserve present controls. |
 | HC-015 | Shared branching can multiply outputs. Reachability/patterns are cached; pair/output budgets and an infrastructure deadline fail with UNKNOWN. | ADDRESSED | Cache identity and large shared-output refusal tested. Empirical workload/latency qualification is not established. |
 | HC-016 | A set of child patterns erased binary-versus-ternary semantic multiplicity. | VERIFIED_RESOLVED within the pattern facet | Independent RED reproduced; canonical multiset repair and full suite pass. Keep arity and relabel controls. |
 | HC-017 | Default JSON parsing silently overwrote duplicate matter keys. | VERIFIED_RESOLVED within the CLI input contract | Actual CLI RED reproduced; strict duplicate-key parser and full suite pass. |
+| HC-018 | The first integration map omitted public quadrilateral `~=` abstraction and described the concrete triangle as the full filtration. | VERIFIED_RESOLVED in the source-map scope | Corrected source map preserves both branches and restrictions. Public L2 `.hm` lacks the branch at the pinned revision; public Lean retrace already assumes simulation. Native transfer remains HC-012. |
 
 Historical checkpoint 1 on 2026-09-30 inspected the ruling's form, which was the hotspot:
 no ruling may make `hyperchaos` an alias of a usage, and none may take on the
@@ -58,3 +59,13 @@ The next rotating audit is due at coherent checkpoint **8**; do not redraw
 to postpone it. The final full suite is 45/45 named tests under the native
 20-second overall deadline. Native closure and actual-system qualification
 remain open, with triggers above.
+
+Checkpoint 5 corrected the quadrilateral source omission. The candidate was
+clean before this documentation/descriptor correction. Exact public source
+inspection distinguished the research specification, Lean declarations and
+L2 `.hm` snapshot; no unpublished foundation patch was copied. The existing
+audit draw **4** and next due checkpoint **8** remain unchanged. The source
+map now includes `~=` without equating it to `=~`, flattening the architecture
+into a linear chain, or upgrading conditional retrace to an unconditional
+result. The full native suite and final diff checks are rerun after the
+correction; no continuation algorithm change is required by this evidence.

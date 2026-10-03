@@ -24,8 +24,27 @@ is not established by a repository name, diagram or Python test.
 **[HYPER] Sourced vocabulary.** Public Hypermath separates ground, relations,
 operations and ordinatics. `□` is ground/application; `~~` is continuation
 overlap; `=~` is same substance regardless of path; `==` is mutual simulation.
-The filtration strengthens `~~` through `=~` to `==`, not the reverse.
-[PROVENANCE.md](PROVENANCE.md) pins the public source coordinates.
+The L1 concrete implication subpath is `== ⇒ =~ ⇒ ~~`. It remains part of
+the source structure, but is not the complete filtration. The published
+quadrilateral architectural specification adds `~=` as transitive abstraction,
+distinct from `=~` substance:
+
+- The architecture has an off-branch from `~~` to `~=`.
+- It describes a retrace from abstraction toward mutual simulation only
+  with a substance-realizability condition.
+- It does not define a linear chain of four relations or identify the two
+  differently oriented symbols `~=` and `=~`.
+
+**[OPEN] Source-level restriction.** The pinned public L2 `.hm` file does
+not contain that abstraction branch. The public quadrilateral Lean file
+does: its `Abstraction` is generated from `Similar` with reflexive, symmetric
+and transitive constructors. Its `SubstanceWitness(x,y)` is already the
+mutual-simulation proposition `(x ≡ y)`, and `conditionalRetrace` returns
+that supplied witness. The displayed conditional conclusion is therefore
+already supplied by its strong premise; this does not derive an independent realizability witness
+from abstract pattern equivalence. The architecture's stronger equivalence
+and grounding language is therefore not imported as a discharged theorem.
+[PROVENANCE.md](PROVENANCE.md) pins these distinct public source surfaces.
 
 **[FRAME]** The finite construction below uses state identifiers, supplied
 choice equivalence classes, sets and a programming language. These are
@@ -34,13 +53,16 @@ observation infrastructure, not a derivation of new primitives from `□`.
 | Native layer | Problem studied here | Transfer that remains [OPEN] |
 |---|---|---|
 | L0 ground | Origin of continuation alternatives | Derive each admitted act from `□`, rather than accept a transition declaration |
-| L1 relations | Same-choice and same-matter presentations | Prove the supplied quotient respects native `~~`, `=~`, `==` filtration |
-| L2 operations | Routes and composed lineage | Connect transition concatenation to native derivation-path composition, preserving trace levels |
+| L1 relations | Same-choice and same-matter presentations | Prove the supplied quotient respects the concrete `== ⇒ =~ ⇒ ~~` subpath |
+| L2 operations and architectural abstraction branch | Routes, composed lineage and erased presentation detail | Connect finite routes to native composition and separately justify a `~=` map; conditional retrace needs independently supplied grounding rather than abstraction alone |
 | L3 ordinatics | Iterated divergence without imposed clock or distance | Extend beyond finite acyclic observations into recurrence and transfinite continuation |
 
-Pattern equality below is not `==`. Settled matter equality is not an
-established native `=~`. Overlap of finite terminal capacities is not a
-complete witness of `~~`. Those casts would skip the bridge obligations.
+Pattern equality below is neither native `~=` nor `==`. Settled matter
+equality is not an established native `=~`. Overlap of finite terminal
+capacities is not a complete witness of `~~`. The finite pattern operation
+abstracts presentation detail, but a relation-preserving native mapping and
+its conditional retrace are separate proof obligations. Those casts would
+skip the bridge obligations.
 
 ## Finite definitions
 
@@ -170,7 +192,9 @@ Each next extension is **[OPEN]**, with a refutable gate:
 
 1. Build a sourced relation-preserving map from native derivations to choice
    and matter declarations. Test equal and unequal native presentations
-   before claiming a `~~`, `=~` or `==` bridge.
+   before claiming a `~~`, `=~`, `~=` or `==` bridge. Keep the concrete and
+   abstraction routes distinct, and do not treat an already-assumed
+   mutual-simulation witness as independently constructed retrace evidence.
 2. Handle recurrent continuation without equating a cycle with nonclosure.
    A native or coinductive construction must preserve return and aperture;
    a clock cutoff cannot be substituted for that argument.
