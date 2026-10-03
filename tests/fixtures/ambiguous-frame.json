@@ -1,0 +1,6 @@
+{
+  "states": ["root", "end"],
+  "transitions": [{"source": "root", "target": "end"}],
+  "outcomes": {"end": "original", "end": "overwritten"},
+  "root": "root"
+}
