@@ -1,11 +1,48 @@
 # Provenance and semantic boundary
 
-No source defines hyperchaos for the family. Tyler Roost's own statements are
-quoted with their dates, in Pacific time. The dynamics meaning is cited from
-its original paper. The executable frame, the ruling's form and the tests are
-an assistant-proposed [FRAME]. They are not his words.
+Tyler Roost directly defined hyperchaos for the family on 2026-10-03. His
+supplied sense supersedes the earlier absence of a definition. His field
+statements below are USER-STATED [HYPER], quoted with their dates in Pacific
+time. The continuation analyzer, mathematical observation definitions,
+boundary-direction rule, ruling structure and tests are assistant-developed
+[FRAME]. Those mechanisms are not his words. Native transfer remains [OPEN].
 
-## Tyler's statements that name hyperchaos
+## Current field definition
+
+USER-STATED, 2026-10-03, direct field clarification:
+
+> "hyper chaos is about chaos of chaotic divergences, so divergences diverging
+> into convergent states is more akin to hyperorder, but a convergence towards
+> divergence is hyperchaos, a divergence from something directed towards
+> convergence, think like a butterfly effect breaking a trajectory into a
+> different optimum is just chaos of an orderly process so not hyperchaos, but
+> specifically divergence of divergences how they diverge, what divergence
+> means, things like that for hyperchaos"
+
+This is `USER_DEFINITION` and supplies `RULING`. It gives a sense distinct
+from the existing dynamics usage. The older `RULING=None` state, README
+emptiness claim, and tests of that absence are superseded in this scope.
+The compatibility behavior with an explicitly absent ruling remains.
+
+## Public source ancestry
+
+The native terminology was checked against public Hypermath revision
+`dc89cbb4f154844ca4909d7c1c359ee3882323e2` on 2026-10-03:
+
+- [L0 ground](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L0_ground.hm): `□`, the ground/application structure and relation declarations.
+- [L1 relations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L1_relations.hm): `==` implies `=~` implies `~~`.
+- [L2 operations](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L2_operations.hm): composition and derivation paths.
+- [L3 ordinatics](https://github.com/TimeLordRaps/hypermath/blob/dc89cbb4f154844ca4909d7c1c359ee3882323e2/L3_ordinatics.hm): ordinal continuation and native layer boundaries.
+
+The published [Hypergrammar chapter 21](https://github.com/TimeLordRaps/hypergrammar/blob/d4df988be65636bf66d6d3f8ef5a85edf524d8dc/docs/prerequisites/21_hypertopologies.md)
+is a pinned lineage source for closure-native continuation and Hyperorder's
+dichrome sense. Its notation and declared statuses belong to that source;
+they are not silently translated into this program's finite predicates.
+Hyperethics's [public ground statement](https://github.com/TimeLordRaps/hyperethics/blob/6b33588bdea7d23eb4f2d9c2732374842e747abd/README.md)
+is a neighboring source, not a rule equating divergent behavior with moral
+fault. No unpublished source claim is needed for the new operational theory.
+
+## Earlier statements and the prior unresolved state
 
 USER-STATED, quoted from working sessions, field sentences only. All three
 are from 2026-09-30.
@@ -25,7 +62,8 @@ And the request this repository answers:
 
 > "Make github repos for each of hyperorder, hyperchaos, and hyperemergence."
 
-None of the three says what hyperchaos is.
+None of these earlier statements defined the field. That absence held in
+the earlier scope and was superseded by the 2026-10-03 clarification above.
 
 ## Tyler's statements about chaos
 
@@ -53,7 +91,8 @@ USER-STATED, 2026-09-25:
 > "atemporality is actually more complex than just NO ORDER, its more like
 > ORDER reachable from either direction if that makes sense"
 
-This is cited for Q6. It does not mention chaos.
+This remains a source for the open atemporality-ownership question. It does
+not mention chaos or establish this implementation's native closure.
 
 ## The dynamics meaning
 
@@ -72,15 +111,18 @@ assistants read the realignment statement. One recommended not coining
 hyperchaos until a sense was chosen, because the dynamics term already
 exists. The other listed senses the family's uses of chaos suggest:
 disruptive formation, structural incompatibility and variability. Tyler then
-asked for the repository. This repository holds the name and declares no
-sense, which keeps both recommendations.
+asked for the repository. The first artifact consequently held the name
+without a sense. The direct 2026-10-03 clarification supersedes that artifact's
+current-scope absence and authorizes field development. It does not turn the
+new finite operationalization into Tyler-authored theory.
 
 An unpublished Hypergrammar draft says chaos "requires no causal structure".
 It is not recorded as a usage until it is published (HC-007).
 
 ## What is cited, not restated
 
-Order and the realignment statement are Hyperorder's. Chaos as disruption
-from authorities is Hyperethics's. The dynamics term is the literature's. The
-project makes no private-source claim and asserts no Verifier Standard
-certification.
+Hyperorder owns its sourced field; the new directional relationship comes
+from Tyler's 2026-10-03 statement. Chaos as disruption from authorities is
+Hyperethics's recorded source sense, not an automatic interpretation of each
+divergence. The dynamics term remains external and is not adopted. The
+project asserts no Verifier Standard certification or native closure.

@@ -1,0 +1,13 @@
+{
+  "states": ["root", "left", "right", "a", "b", "c", "d"],
+  "transitions": [
+    {"source": "root", "target": "left", "choice": "left-alternative"},
+    {"source": "root", "target": "right", "choice": "right-alternative"},
+    {"source": "left", "target": "a", "choice": "a-alternative"},
+    {"source": "left", "target": "b", "choice": "b-alternative"},
+    {"source": "right", "target": "c", "choice": "c-alternative"},
+    {"source": "right", "target": "d", "choice": "d-alternative"}
+  ],
+  "outcomes": {"a": "a", "b": "b", "c": "c", "d": "d"},
+  "root": "root"
+}

@@ -15,10 +15,11 @@ def ruling(**overrides):
 
 
 class SenseTests(unittest.TestCase):
-    def test_hyperchaos_has_no_sense_until_tyler_rules(self):
-        self.assertIsNone(RULING)
+    def test_current_ruling_supersedes_the_prior_missing_sense(self):
+        self.assertIsInstance(RULING, Ruling)
+        self.assertIn("divergence", resolve_sense("hyperchaos").gloss)
         with self.assertRaises(KeyError):
-            resolve_sense("hyperchaos")
+            resolve_sense("hyperchaos", None)
 
     def test_chaos_is_never_hyperchaos(self):
         for term in ("chaos", "Hyperchaos", "hyper-chaos", ""):
@@ -34,7 +35,7 @@ class SenseTests(unittest.TestCase):
     def test_recording_a_usage_adopts_nothing(self):
         for usage in USAGES:
             with self.assertRaises(KeyError, msg=usage.name):
-                resolve_sense(usage.term)
+                resolve_sense(usage.term, None)
 
     def test_the_dynamics_term_is_recorded_as_external(self):
         same_word = [u for u in USAGES if u.term == "hyperchaos"]

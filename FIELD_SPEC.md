@@ -1,88 +1,112 @@
-# Hyperchaos: a field named before its sense
+# Hyperchaos field specification, 0.2.0
 
-**Status, 2026-09-30.** [FRAME] Tyler Roost named hyperchaos three times on
-2026-09-30: beside hyperorder in a statement about chaos, order and
-atemporality; as a field the family was missing; and as a repository to
-create. None of the three says what hyperchaos is. The word already names a
-term in dynamics. This repository is proposed as the family's home for
-hyperchaos. It declares no sense and does not settle the questions below.
-Tags: [HYPER] a proposal or declaration, [FRAME] the finite executable
-reading, [OPEN] unresolved, [FORM] a structural fact the tests check.
+## Meaning and classifications
 
-## What this field owns, and what it cites
+**[HYPER] USER-STATED, 2026-10-03:** Hyperchaos concerns chaos of chaotic
+divergences, specifically divergence of divergences and how they diverge.
+Convergence toward divergence belongs to it; divergences resolving into
+convergent states point toward Hyperorder. A redirected orderly process
+reaching a different optimum is ordinary chaos and does not suffice.
 
-Hyperchaos owns the **sense discipline** for the term `hyperchaos`: no sense
-until a ruling, and the form a ruling must have. It records, and does not
-adopt, the usages of `chaos` and `hyperchaos` in its sources.
+The exact statement is `USER_DEFINITION`; `RULING` now quotes it, and
+`resolve_sense("hyperchaos")` returns that sense. The previous empty ruling
+is superseded by the direct clarification. `chaos` remains distinct, never
+an alias. Explicit `None` still leaves a ruling unresolved. Usage records do
+not choose a sense by themselves, and ruling shape does not authenticate
+the speaker.
 
-It cites and does not restate:
+**[FRAME]** Everything below is an assistant-developed finite observation.
+**[OPEN]** Native derivation from `□` and relation-preserving transfer into
+`~~`, `=~`, and `==` have not been discharged.
 
-| Subject | Owner |
+## Immutable input
+
+`ContinuationFrame(states, transitions, outcomes)` copies its inputs and
+protects internal maps. State identifiers are unique nonempty strings.
+`Transition(source, target, choice)` has bound endpoints and an optional
+nonempty choice class. Duplicate records are refused. Each fork must
+declare pairwise distinct semantic choice classes. This is a caller-supplied
+semantic quotient: the caller first identifies presentations of the same
+continuation act. Unequal endpoint names alone are insufficient.
+
+Every terminal must declare nonempty settled matter; nonterminals may not.
+Different terminal identifiers may name the same matter. Unknown matter is
+refused, not declared convergent. Kahn's directed acyclic graph (DAG)
+traversal rejects cycles. Acyclicity supplies termination of this finite
+computation, not native truth or closure. Input budgets: 1–256 states and
+at most 1,024 transitions.
+
+## Observations and witnesses
+
+- `outgoing(state)` returns declared acts; unknown states fail.
+- `reachable(state)` returns cached reflexive finite reachability.
+- `settled_capacity(state)` returns terminal matter classes reachable from
+  this state. It is not the full native continuation capacity.
+- `route(source, target, allowed=...)` returns an actual transition route or
+  `None`. Breadth-first search (BFS) selects a witness; its search distance
+  is not a time model.
+- `observed_pattern(state)` returns a cached recursive multiset of fork
+  patterns after erasing identifiers, matter spellings and unary chains.
+  Semantic alternative multiplicities remain; branch ordering has no meaning.
+
+`analyze(frame, root)` returns `Analysis` with:
+
+| Field | Exact finite proposition |
 |---|---|
-| Chaos as disruption injected by authorities, in the account of innocence | [Hyperethics](https://github.com/TimeLordRaps/hyperethics), from Tyler's statements of 2026-09-26 |
-| Deception by authorities, which those statements compare it to | [Taxonomy of Deception](https://github.com/TimeLordRaps/taxonomy-of-deception) |
-| Hyperchaos as chaotic dynamics with at least two positive Lyapunov exponents | Outside the family: the dynamics literature's usage of a term introduced by O. E. Rössler, "An equation for hyperchaos", *Physics Letters A* 71 (1979) 155–157, [doi:10.1016/0375-9601(79)90150-6](https://doi.org/10.1016/0375-9601(79)90150-6) |
-| Order, the 2026-09-30 statement, and whether chaos realigns into hyperorder | [Hyperorder](https://github.com/TimeLordRaps/hyperorder) |
-| Order and branching among reality presentations | [Hypertime](https://github.com/TimeLordRaps/hypertime) |
-| Newly emerging coherence before it stabilizes | [Hyperemergence](https://github.com/TimeLordRaps/hyperemergence) |
-| Any ethical ground, if Q4 is answered yes | [Hyperethics](https://github.com/TimeLordRaps/hyperethics) |
+| `first_divergences` | Every reachable fork of distinct declared choice classes |
+| `iterated_divergences` | A fork has two alternatives, each reaching its own first divergence site in separate regions before reconvergence |
+| `pattern_variation` on an iterated witness | The two sites have unequal recursive split patterns, a stricter facet rather than a requirement for Hyperchaos |
+| `convergences` | Distinct choices have routes with disjoint interiors to a first shared state |
+| `convergence_toward_divergence` | Such a shared state continues to a first divergence site |
+| `settled_matter` | Terminal matter classes reachable from the selected root |
+| `direction` | Boundary reading below; local witnesses are retained |
 
-## The usages
+The first divergence sites on both sides occur before any state reachable
+from the other side. Reaching one shared fork by two routes is therefore
+convergence toward divergence, not two independent divergences. Witnesses
+retain actual acts, including distinct choices landing at the same state.
 
-[HYPER] Two usages are recorded, each with its standing:
+## Boundary direction and limits
 
-- `authority-disruption`, of the word `chaos`, USER-STATED. On 2026-09-26
-  Tyler described innocence as "a mind uncorrupted by disrupted chaos from
-  authorities who misuse power", and added that "an authority may be
-  injecting unnecessary chaos and not have a negative intent".
-- `two-positive-lyapunov-exponents`, of the word `hyperchaos`, EXTERNAL. This
-  is the meaning the word already has in dynamics.
+This assistant-proposed rule binds the observation boundary to the claim:
 
-[FORM] The tests check:
+1. Reachable forks with one common terminal matter give `HYPERORDER` direction.
+2. Otherwise an iterated-divergence or convergence-toward-divergence witness
+   gives `HYPERCHAOS` direction.
+3. Other reachable forks give `ORDINARY_DIVERGENCE`.
+4. No reachable fork gives `ORDERLY`.
 
-- `RULING` is `None`, and `hyperchaos` resolves to nothing.
-- `chaos`, and any other spelling, resolves to nothing, with or without a
-  ruling.
-- Each usage names its word, its gloss, its source and its standing.
-  Recording one adopts nothing: neither word resolves through it.
-- The dynamics meaning of `hyperchaos` is recorded once, as EXTERNAL.
-- Tyler's two statements that name hyperchaos are recorded with status OPEN.
-- The module exports no grounding relation, realignment, Lyapunov exponent,
-  attractor, clock, index, duration or step.
+These classify this finite observation, not the complete ontology of Tyler's
+field. Boundary `HYPERORDER` does not erase local Hyperchaos motifs. Equal
+nested patterns still qualify as iterated divergence. Two orderly redirected
+alternatives do not.
 
-## The ruling
+`analyze` defaults to at most 20,000 alternative-pair inspections, 4,096
+combined higher/merge/onward witnesses, and a two-second infrastructure
+deadline. Budgets can be lowered; the deadline may be raised to at most
+20 seconds. Exhaustion raises `AnalysisBudgetExceeded` with result `UNKNOWN`,
+returning no classification. The constructor caches reachability and
+pattern classes. No claim of constant-time analysis or unbounded capacity
+is made. Input limits and infrastructure seconds are not field variables.
 
-[FRAME] A `Ruling` is the form in which a sense would be chosen:
+## Check and command-line interface
 
-- It states the sense (`gloss`), quotes his words (`said`) and names their
-  source. Each is non-empty text.
-- `builds_on` names one recorded usage, or is `None` for a sense that builds
-  on none. A name that is not recorded is refused.
-- Building on an EXTERNAL usage requires `acknowledges_external=True`, and
-  only an EXTERNAL usage may be acknowledged.
-- Under a ruling, `hyperchaos` resolves to a new sense named `hyperchaos`,
-  with the ruling's gloss and source. It is never the usage it builds on.
+`check_iterated_witness(frame, witness)` checks edges, connected paths,
+distinct choices, divergence endpoints, separate lineage and the pattern
+facet without trusting the analyzer's search. It does not authenticate
+semantic input facts. Forged transition, shared lineage, wrong endpoint or
+wrong pattern flag fails.
 
-The ruling's form is assistant-proposed bookkeeping; see
-[PROVENANCE.md](PROVENANCE.md). The frame checks the form. It does not
-authenticate that the words are Tyler's.
+`python -B -u hyperchaos.py --examples` emits six full JavaScript Object
+Notation (JSON) reports. `--input <frame.json>` reads exactly `states`,
+`transitions`, `outcomes` and `root`; transition objects contain `source`,
+`target` and optional `choice`. Duplicate JSON keys are ambiguous and refused.
+The read budget is one mebibyte (MiB, 1,048,576 bytes). Malformed or exhausted
+inputs exit 2. The command writes no frame and performs no remote operation.
 
-## Questions for Tyler
-
-- **Q1.** What is hyperchaos? No sense is declared. A ruling would give one:
-  the sense in your words, and what it builds on, if anything.
-- **Q2.** In dynamics, "hyperchaos" already means chaos with at least two
-  positive Lyapunov exponents. Does the family's hyperchaos take that
-  meaning, extend it, or mean something else under the same name?
-- **Q3.** Which chaos realigns into order? On 2026-09-26 chaos is disruption
-  injected by authorities, which corrupts innocence. On 2026-09-30 chaos
-  realigns into order. Are these the same chaos?
-- **Q4.** Does Hyperethics ground hyperchaos? You said "Im not sure".
-  Hyperorder asks the same of hyperorder (its Q2).
-- **Q5.** How do hyperchaos and hyperorder relate? You named them together
-  twice on 2026-09-30. Hyperorder's Q1 asks whether the order chaos realigns
-  into is hyperorder.
-- **Q6.** Which field owns atemporality? The 2026-09-30 statement ties the
-  realignment to it, and on 2026-09-25 you described it as "ORDER reachable
-  from either direction". Hypertime orders reality presentations, and
-  Hyperorder keeps order ordinal; neither states this yet.
+The descriptor binds actual exports. `validate.py` runs the full streaming
+`unittest` suite under a 20-second overall deadline without per-test process
+isolation. The finite oracle checks all 1,024 five-state acyclic structures;
+this does not prove all unbounded frames correct. Native integration, real
+application qualification, cyclic continuation and ethical assessment stay
+separate [OPEN] gates described in [THEORY.md](THEORY.md).
